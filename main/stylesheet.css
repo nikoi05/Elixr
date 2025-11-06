@@ -1,0 +1,292 @@
+ body{
+            background-color: #010203;
+            margin: 0%;
+            padding: 0%;
+            background: url(https://64.media.tumblr.com/848c34684995d7b754a2f228a5bb92e0/7b71b0a529a71536-02/s640x960/9d1869fc9ab1af44c004fcb141600d87b984bcf7.gifv);
+            height: 100vh;
+            background-size: cover;
+            width: auto;
+          background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        header{
+           
+            background-color: #1d1d1f;
+            text-align: center;
+            color: #D3AC2C;
+            padding: 2px;
+            font-family: 'Times New Roman', Times;
+            margin: 0%;
+            font-size: 20px;
+            border-bottom: #D3AC2C 1px solid;
+            line-height:2px ;
+        }
+   
+   
+        .container{
+            background:fixed;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+
+
+        }
+        .container h5{
+            padding: 0px;
+            margin: 0px;
+            animation: glow 1.5s infinite;
+        }
+        .container h2{
+            font-family: 'Times New Roman', Times, serif;
+            color: #D3AC2C;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5); /* Subtle initial gold glow */
+            animation:ease subtleGlow infinite alternate;
+            padding-top: 30px;
+        }
+        /* glowing effect animation*/
+        @keyframes subtleGlow {
+            from {
+                text-shadow: 0 0 5px #D4AF37, /* Less intense shadow when starting */
+                             0 0 10px #D4AF37;
+            }
+            to {
+                text-shadow: 0 0 15px #D4AF37,
+                             0 0 30px rgba(212, 175, 55, 0.8), 
+                             0 0 45px rgba(212, 175, 55, 0.6);
+            }
+        }
+
+        .container h5{
+            font-family: 'Times New Roman', Times, serif;
+            color: #D3AC2C;
+            text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+            animation:ease subtleGlow infinite alternate;
+            line-height: 0%;
+            font-size: 1rem;
+        }
+        button{
+            padding: 15px 30px;
+            margin:  30px;
+            width: 400px;
+            border-radius: 15px;
+            background-color: #D3AC2C;
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid #D4AF37;
+            color: #1a1a1a; ;
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s, color 0.3s;
+    
+
+
+           
+        }
+        button:hover{
+            background-color:#1a1a1a;
+            cursor: pointer;
+            color: #D4AF37;
+            
+        }
+
+       
+
+        /* dropdown button and content styling*/
+/* Container styling */
+
+#ListContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+ .collection{
+            color:#010203;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;  
+            align-items: center;
+        }
+/* Dropdown button styling */
+.dropdown-btn {
+    display: flex;
+    width: 400px;
+    background-color:#D3AC2C;
+    color: #333;
+    padding: 15px 20px;
+    border: solid 2px color #D3AC2C;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+
+
+.dropdown-btn:hover {
+    background-color:#1d1d1f;
+    
+}
+
+/* Dropdown content box (hidden by default) */
+.dropdown-content {
+    display: none;
+    padding: 15px 20px;
+    background-color:rgba(132, 129, 129, 0.3);
+    outline: none;
+    border: 1px solid rgba(132,129, 129, 0.3);
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+/* Show class when active */
+.show {
+    display:block;
+    animation: fadeIn 0.3s ease-in-out;
+}
+@keyframes fadeIn {
+    from{ opacity: 0;transform: translateY(-5px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Buttons inside dropdown */
+.dropdown-content button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #D4AF37;
+    border: solid 1px #D4AF37;
+    transition: 0.2s;
+}
+
+.dropdown-content button:hover {
+    background-color: #1a1a1a;
+}
+
+/* List styling */
+.dropdown-content ul {
+    display: inline-block;
+    list-style-type: square;
+    padding: 10px 15px;
+    align-items: center;
+    color: #D4AF37;
+}
+
+.dropdown-content input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #D4AF37;
+    padding: 10px;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #D4AF37;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-weight: bold;
+    outline: none;
+    color: #010203;
+
+}
+.dropdown-content input::placeholder{
+    color: #010203;
+    opacity: 0.6;
+}
+
+footer{
+    text-align: center;
+    color: #D3AC2C;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: auto;
+    margin-top: 50px;
+    font-size: 0.9rem;
+
+}
+/* responsive display for phone screens and tablets*/
+/* Tablets */
+@media (max-width: 768px) {
+  header {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .container h2 {
+    font-size: 1.5rem;
+  }
+
+  button,
+  .dropdown-btn {
+    width: 90%;
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+
+  .dropdown-content {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .dropdown-content input {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  header {
+    font-size: 16px;
+    padding: 9px;
+  }
+
+  .container h2 {
+    font-size: 1.2rem;
+  }
+
+  .container h5 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  button,
+  .dropdown-btn {
+    width: 90%;
+    font-size: 13px;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+
+  .dropdown-content {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .dropdown-content input {
+    font-size: 13px;
+    padding: 5px;
+    width: 80%;
+  }
+
+  footer {
+    font-size: 0.75rem;
+    padding: 10px 0;
+  }
+}
